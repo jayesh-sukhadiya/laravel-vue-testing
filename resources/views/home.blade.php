@@ -6,13 +6,13 @@
       $hour = date('H');
       $dayTerm = ($hour >= 6 && $hour <= 11) ? "Good Morning" : (($hour > 11 && $hour <= 16) ? "Good Afternoon" : (($hour > 16 && $hour <= 23) ? "Good Evening" : "Hello" ) );
     ?>
-    <div class="row mb-1">
-        <div class="col-lg-6 col-md-6 d-none d-md-block">
-            <h4>{{ $dayTerm }}, {{ Auth::user()->name }}</h4>
-        </div>
-        <div class="col-lg-6 col-md-6">
-        </div>
-    </div>
+  <div class="row mb-1">
+      <div class="col-lg-6 col-md-6 d-none d-md-block">
+          <h4>{{ $dayTerm }}, {{ Auth::user()->name }}</h4>
+      </div>
+      <div class="col-lg-6 col-md-6">
+      </div>
+  </div>
 
   <div class="row">
     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
